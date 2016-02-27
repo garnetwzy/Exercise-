@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1FAD25EBE59E07248BD0F7D5 /* libPods-LeanChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79D434DB9DF2EFE3DD51B2 /* libPods-LeanChat.a */; };
+		47B8734C1C81743800FECD83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B8734B1C81743700FECD83 /* CoreData.framework */; };
+		47B8734F1C8174E400FECD83 /* LeanChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47B8734D1C8174E400FECD83 /* LeanChat.xcdatamodeld */; };
+		47B873591C81796E00FECD83 /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B873521C81796E00FECD83 /* Location+CoreDataProperties.m */; };
+		47B8735A1C81796E00FECD83 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B873541C81796E00FECD83 /* Location.m */; };
+		47B8735B1C81796E00FECD83 /* Run+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B873561C81796E00FECD83 /* Run+CoreDataProperties.m */; };
+		47B8735C1C81796E00FECD83 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B873581C81796E00FECD83 /* Run.m */; };
 		700E6A151B3D2B4E00675021 /* LZPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E6A141B3D2B4E00675021 /* LZPushManager.m */; };
 		703B392E1B74890100E649DC /* CDSNSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 703B392D1B74890100E649DC /* CDSNSView.m */; };
 		7073FC1D1B147048006F2692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7073FC1C1B147048006F2692 /* main.m */; };
@@ -86,6 +92,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47B8734B1C81743700FECD83 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		47B8734E1C8174E400FECD83 /* LeanChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeanChat.xcdatamodel; sourceTree = "<group>"; };
+		47B873511C81796E00FECD83 /* Location+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Location+CoreDataProperties.h"; sourceTree = "<group>"; };
+		47B873521C81796E00FECD83 /* Location+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Location+CoreDataProperties.m"; sourceTree = "<group>"; };
+		47B873531C81796E00FECD83 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		47B873541C81796E00FECD83 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		47B873551C81796E00FECD83 /* Run+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Run+CoreDataProperties.h"; sourceTree = "<group>"; };
+		47B873561C81796E00FECD83 /* Run+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Run+CoreDataProperties.m"; sourceTree = "<group>"; };
+		47B873571C81796E00FECD83 /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		47B873581C81796E00FECD83 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 		4A71AD2EA525F79828723CA0 /* Pods-LeanChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeanChat/Pods-LeanChat.release.xcconfig"; sourceTree = "<group>"; };
 		700E6A131B3D2B4E00675021 /* LZPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushManager.h; sourceTree = "<group>"; };
 		700E6A141B3D2B4E00675021 /* LZPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushManager.m; sourceTree = "<group>"; };
@@ -215,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B8734C1C81743800FECD83 /* CoreData.framework in Frameworks */,
 				9A2AFA7F1C2AB23400F451BE /* UIKit.framework in Frameworks */,
 				9A2AFA6D1C2AADB200F451BE /* SystemConfiguration.framework in Frameworks */,
 				9A2AFA7D1C2AB22500F451BE /* StoreKit.framework in Frameworks */,
@@ -232,6 +249,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47B873501C81793F00FECD83 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				47B8734D1C8174E400FECD83 /* LeanChat.xcdatamodeld */,
+				47B873511C81796E00FECD83 /* Location+CoreDataProperties.h */,
+				47B873521C81796E00FECD83 /* Location+CoreDataProperties.m */,
+				47B873531C81796E00FECD83 /* Location.h */,
+				47B873541C81796E00FECD83 /* Location.m */,
+				47B873551C81796E00FECD83 /* Run+CoreDataProperties.h */,
+				47B873561C81796E00FECD83 /* Run+CoreDataProperties.m */,
+				47B873571C81796E00FECD83 /* Run.h */,
+				47B873581C81796E00FECD83 /* Run.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		47B8735D1C817A6100FECD83 /* RunPart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RunPart;
+			sourceTree = "<group>";
+		};
 		700E6A121B3D2B4E00675021 /* LZPushManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +314,8 @@
 				7073FCD91B1471A4006F2692 /* CDAppDelegate.h */,
 				7073FCDA1B1471A4006F2692 /* CDAppDelegate.m */,
 				709233091B4522B100E2D1F5 /* CDCommon.h */,
+				47B8735D1C817A6100FECD83 /* RunPart */,
+				47B873501C81793F00FECD83 /* CoreData */,
 				706780071B2363C5002F1413 /* vendor */,
 				7073FC401B14718C006F2692 /* controllers */,
 				7073FC761B14718C006F2692 /* models */,
@@ -496,6 +538,7 @@
 		B215B044676D1B59F414465D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47B8734B1C81743700FECD83 /* CoreData.framework */,
 				9A2AFA7E1C2AB23400F451BE /* UIKit.framework */,
 				9A2AFA7C1C2AB22500F451BE /* StoreKit.framework */,
 				9A2AFA7A1C2AB21E00F451BE /* Security.framework */,
@@ -679,6 +722,7 @@
 				7073FCB71B14718C006F2692 /* CDEntryVC.m in Sources */,
 				703B392E1B74890100E649DC /* CDSNSView.m in Sources */,
 				7073FCD71B14718C006F2692 /* CDResizableButton.m in Sources */,
+				47B8735A1C81796E00FECD83 /* Location.m in Sources */,
 				7087E77E1B78BF34003641E2 /* CDEntryBaseVC.m in Sources */,
 				7073FC1D1B147048006F2692 /* main.m in Sources */,
 				7073FCAD1B14718C006F2692 /* CDWebViewVC.m in Sources */,
@@ -686,6 +730,7 @@
 				70DC7DB41B2F531F0047B7AB /* CDUserManager.m in Sources */,
 				7073FCB81B14718C006F2692 /* CDLoginVC.m in Sources */,
 				7073FCAB1B14718C006F2692 /* CDBaseTableVC.m in Sources */,
+				47B873591C81796E00FECD83 /* Location+CoreDataProperties.m in Sources */,
 				7073FCD81B14718C006F2692 /* CDTextField.m in Sources */,
 				7073FCCA1B14718C006F2692 /* CDBadgeLabel.m in Sources */,
 				70B1C51B1B413E1500DCEC8D /* MCMutipleSectionTC.m in Sources */,
@@ -694,6 +739,7 @@
 				7073FCDB1B1471A4006F2692 /* CDAppDelegate.m in Sources */,
 				7073FCC11B14718C006F2692 /* CDUserInfoVC.m in Sources */,
 				7087E7771B78B39A003641E2 /* CDPhoneRegisterVC.m in Sources */,
+				47B8735C1C81796E00FECD83 /* Run.m in Sources */,
 				7073FCD41B14718C006F2692 /* CDPopMenu.m in Sources */,
 				70DC7DB51B2F531F0047B7AB /* CDUtils.m in Sources */,
 				7073FCC21B14718C006F2692 /* AVIMCustomMessage.m in Sources */,
@@ -711,6 +757,8 @@
 				7073FCAE1B14718C006F2692 /* CDChatVC.m in Sources */,
 				708DF4711B41A9D20047C994 /* CDSelectMemberVC.m in Sources */,
 				7073FCC41B14718C006F2692 /* CDAddRequest.m in Sources */,
+				47B8735B1C81796E00FECD83 /* Run+CoreDataProperties.m in Sources */,
+				47B8734F1C8174E400FECD83 /* LeanChat.xcdatamodeld in Sources */,
 				7073FCC51B14718C006F2692 /* CDUser.m in Sources */,
 				7073FCAC1B14718C006F2692 /* CDBaseVC.m in Sources */,
 				7073FCB01B14718C006F2692 /* CDAddMemberVC.m in Sources */,
@@ -1012,6 +1060,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47B8734D1C8174E400FECD83 /* LeanChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47B8734E1C8174E400FECD83 /* LeanChat.xcdatamodel */,
+			);
+			currentVersion = 47B8734E1C8174E400FECD83 /* LeanChat.xcdatamodel */;
+			path = LeanChat.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7073FC0F1B147048006F2692 /* Project object */;
 }

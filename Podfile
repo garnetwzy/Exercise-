@@ -23,7 +23,8 @@ target 'LeanChat' do
     pod 'PopMenu', '2.4'
     pod 'CYLTabBarController'
     pod 'SDWebImage'
-
+    pod 'JZLocationConverter'
+    pod 'CSStickyHeaderFlowLayout'	
 #    pod 'LeanCloudSocial', :path => '~/ios/leancloud-social-ios'
 #    pod 'LeanCloudFeedback', :path => '~/ios/leancloud-feedback-ios/'
     end
